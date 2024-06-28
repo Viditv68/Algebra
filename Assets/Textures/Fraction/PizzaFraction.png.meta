@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 59c1fdac4c7856b4b8e931ce93658aea
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PizzaFraction_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 351
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ea4ed5d6a3eaef4ab67cff9781ce5c9
+      internalID: -879507209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaFraction_3
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 350
+        width: 129
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654f6aa540228844d8d29dc07bdc32a4
+      internalID: 95516324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaFraction_13
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 191
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd35e8fc3f3fbb941a4b693b2c6141e9
+      internalID: 312609615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaFraction_14
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 191
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28c8acab2516ab498ee3fda45694a08
+      internalID: -1109145351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaFraction_17
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 31
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0743523d103271647b26cb86b5f1d0e7
+      internalID: 1483784217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PizzaFraction_19
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 31
+        width: 127
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d3f3a5079e65f48b7a447ca761c0d2
+      internalID: -1684571745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      PizzaFraction_0: -964521942
+      PizzaFraction_1: -879507209
+      PizzaFraction_10: -1295794939
+      PizzaFraction_11: 168936857
+      PizzaFraction_12: 233965669
+      PizzaFraction_13: 312609615
+      PizzaFraction_14: -1109145351
+      PizzaFraction_15: -1742024678
+      PizzaFraction_16: 1355271879
+      PizzaFraction_17: 1483784217
+      PizzaFraction_18: -1686249764
+      PizzaFraction_19: -1684571745
+      PizzaFraction_2: -1080891724
+      PizzaFraction_20: -1408384604
+      PizzaFraction_21: -1601039439
+      PizzaFraction_22: 176337551
+      PizzaFraction_23: -547922523
+      PizzaFraction_24: 1021423715
+      PizzaFraction_25: 1391191597
+      PizzaFraction_26: -2000020629
+      PizzaFraction_27: 2003138702
+      PizzaFraction_28: -2142141921
+      PizzaFraction_29: 238509425
+      PizzaFraction_3: 95516324
+      PizzaFraction_30: -889230737
+      PizzaFraction_31: -1083727734
+      PizzaFraction_32: 985897684
+      PizzaFraction_33: -1392648841
+      PizzaFraction_34: 1327122378
+      PizzaFraction_35: -1309866428
+      PizzaFraction_36: 72041468
+      PizzaFraction_37: -1521257594
+      PizzaFraction_38: -329673178
+      PizzaFraction_39: 1806791291
+      PizzaFraction_4: 1301918896
+      PizzaFraction_40: 1748232625
+      PizzaFraction_41: -1840894865
+      PizzaFraction_42: 1117048074
+      PizzaFraction_43: -2099166419
+      PizzaFraction_44: -163440020
+      PizzaFraction_45: 1654811394
+      PizzaFraction_46: 1838135437
+      PizzaFraction_47: 170254601
+      PizzaFraction_48: 1268571313
+      PizzaFraction_49: 52245476
+      PizzaFraction_5: 2059453033
+      PizzaFraction_50: -291701548
+      PizzaFraction_6: 884221135
+      PizzaFraction_7: 823841772
+      PizzaFraction_8: 956286908
+      PizzaFraction_9: -1630359139
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
