@@ -31,6 +31,7 @@ public class GameManager : MonoBehaviour
     [Header("Character Info")]
     public RectTransform character;
     public Animator characterAnim;
+    public RectTransform crab;
     public TextMeshProUGUI speechBubbleText;
     public Sprite happySprite;
     public Sprite sadSprite;
@@ -52,8 +53,10 @@ public class GameManager : MonoBehaviour
 
     private GameObject clock = null;
 
+    private Vector2 crabPos;
     void Start()
     {
+        crabPos = crab.anchoredPosition;
         isTouchEnabled = false;
         questions = questionHandler.questions;
         characterStartingPoisition = character.transform.position;
@@ -96,8 +99,15 @@ public class GameManager : MonoBehaviour
     private void DisplayQuestion(Questions _ques)
     {
         headerText.text = "Question " + (index + 1);
-        textQuestion.text = _ques.question.Substring(0, _ques.question.IndexOf(','));
-        secondTextQuestion.text = _ques.question.Substring(_ques.question.IndexOf(',') + 1);
+        if (_ques.question.IndexOf(',') != -1)
+            textQuestion.text = _ques.question.Substring(0, _ques.question.IndexOf(','));
+        else
+            textQuestion.text = _ques.question;
+
+        if (_ques.question.IndexOf(',') != -1)
+            secondTextQuestion.text = _ques.question.Substring(_ques.question.IndexOf(',') + 1);
+        else
+            secondTextQuestion.text = "";
 
     }
 
@@ -155,6 +165,9 @@ public class GameManager : MonoBehaviour
 
     private void LevelGratificiation(int _index)
     {
+        inputPanel.gameObject.SetActive(false);
+        MoveCrab();
+
         Questions ques = questions[index];
         if (_index == ques.correctOption)
         {
@@ -171,18 +184,22 @@ public class GameManager : MonoBehaviour
             audioManager.PlayAudioClipByKey(SoundKey.Error);
 
         }
+        speechBubbleText.transform.parent.gameObject.SetActive(true);
 
-        if (characterAnim.gameObject.activeInHierarchy)
-            characterAnim.Play("CharacterSlideIn");
-        else
-            characterAnim.gameObject.SetActive(true);
+        //if (characterAnim.gameObject.activeInHierarchy)
+        //    characterAnim.Play("CharacterSlideIn");
+        //else
+        //    characterAnim.gameObject.SetActive(true);
 
         //speechBubbleText.transform.parent.gameObject.SetActive(true);
         if(ques.isMultipleChoice)
             options[ques.correctOption].GetComponentInParent<Animator>().SetTrigger("PlayBounce");
-        characterAnim.Play("CharacterSlideIn");
+        //characterAnim.Play("CharacterSlideIn");
 
-        StartCoroutine(SlideOut());
+
+
+
+        //StartCoroutine(SlideOut());
 
         index++;
         if ((index) % questionHandler.checkPoint == 0)
@@ -192,12 +209,38 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator SlideOut()
+    bool isFlip;
+    private void MoveCrab()
     {
-        yield return new WaitForSeconds(2f);
+        Vector2 CrabPosition;
+        if (!isFlip)
+        {
+
+            //moveCloudDown.anchoredPosition = cloudPos;
+            //CrabPosition = new Vector2(crabPos.x - 25, crabPos.y);
+
+            crab.DOAnchorPosX(crab.anchoredPosition.x - 3000,4f).OnComplete(() => {
+                SlideOut();
+                
+            });
+
+
+            isFlip = true;
+        }
+        else
+        {
+            crab.DOAnchorPosX(crab.anchoredPosition.x + 3000, 4f).OnComplete(() => { SlideOut(); }); 
+
+            isFlip = false;
+        }
+    }
+
+    private void SlideOut() 
+    {
+
         speechBubbleText.transform.parent.gameObject.SetActive(false);
         questionsPanelAnim.Play("SlideOut");
-        characterAnim.Play("CharacterSlideOut");
+        //characterAnim.Play("CharacterSlideOut");
     }
 
 
@@ -222,7 +265,9 @@ public class GameManager : MonoBehaviour
 
         if (answer.Length >= len)
         {
+            isTouchEnabled = false;
             LevelGratificiation(int.Parse(answer));
+            answer = "";
         }
     }
 }

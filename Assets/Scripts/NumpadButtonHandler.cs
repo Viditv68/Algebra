@@ -12,7 +12,9 @@ public class NumpadButtonHandler : MonoBehaviour
 
     public void HandleButtonClick(int value)
     {
-       
+        if (!gameManager.isTouchEnabled)
+            return;
+
         gameManager.GetButtonInput(value);
         boomVfx.Play();
         btnAnim.SetTrigger("Pressed");

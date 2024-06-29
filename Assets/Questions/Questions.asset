@@ -34,14 +34,18 @@ MonoBehaviour:
     - 12
     - 14
     - 10
-  - isMultipleChoice: 1
+  - isMultipleChoice: 0
     question: 7+X=10,X=
     correctOption: 3
+    options: []
+  - isMultipleChoice: 1
+    question: An algebric expression that contains only one term is called?
+    correctOption: 1
     options:
-    - 6
-    - 5
-    - 2
-    - 3
+    - Binomial
+    - Monomial
+    - Trinomial
+    - NA
   - isMultipleChoice: 1
     question: 2X+6=X+7,X=
     correctOption: 0
@@ -50,3 +54,59 @@ MonoBehaviour:
     - 3
     - 5
     - 2
+  - isMultipleChoice: 0
+    question: 3Y+7=13,Y=
+    correctOption: 2
+    options: []
+  - isMultipleChoice: 0
+    question: 7X-4=17,X=
+    correctOption: 3
+    options: []
+  - isMultipleChoice: 1
+    question: 3Y+2=17-2Y,Y=
+    correctOption: 3
+    options:
+    - 7
+    - 1
+    - 5
+    - 3
+  - isMultipleChoice: 1
+    question: The algebraic expression 3x+2y+6 is a?
+    correctOption: 0
+    options:
+    - Trinomial
+    - Monomial
+    - Binomial
+    - NA
+  - isMultipleChoice: 1
+    question: 'The product of 4x and 0 is:'
+    correctOption: 2
+    options:
+    - 4X
+    - 4
+    - 0
+    - None of the above
+  - isMultipleChoice: 0
+    question: 4X+12=16,X=
+    correctOption: 1
+    options: []
+  - isMultipleChoice: 1
+    question: 4Y+6=Y+21,Y=
+    correctOption: 1
+    options:
+    - 3
+    - 5
+    - 2
+    - 8
+  - isMultipleChoice: 0
+    question: 6X-9=3,X=
+    correctOption: 2
+    options: []
+  - isMultipleChoice: 1
+    question: 4X+3=2X+11,X=
+    correctOption: 2
+    options:
+    - 5
+    - 3
+    - 4
+    - 1
