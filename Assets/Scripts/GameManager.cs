@@ -16,8 +16,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Transform clockTransfrom;
 
 
-    [SerializeField] private AudioManager audioManager;
+    public AudioManager audioManager;
     public GameObject scorePanel;
+    public GameObject pausePanel;
 
     [Header("Text Questions Info")]
     public Animator questionsPanelAnim;
@@ -30,11 +31,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Character Info")]
     public RectTransform character;
-    public Animator characterAnim;
+    //public Animator characterAnim;
     public RectTransform crab;
     public TextMeshProUGUI speechBubbleText;
-    public Sprite happySprite;
-    public Sprite sadSprite;
     private Vector3 characterStartingPoisition;
 
 
@@ -50,6 +49,7 @@ public class GameManager : MonoBehaviour
     public int correctAnswers = 0;
     int index = 0;
     public bool isTouchEnabled;
+    public bool isGameMute = false;
 
     private GameObject clock = null;
 
@@ -235,12 +235,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void SlideOut() 
+    public void SlideOut() 
     {
 
         speechBubbleText.transform.parent.gameObject.SetActive(false);
         questionsPanelAnim.Play("SlideOut");
         //characterAnim.Play("CharacterSlideOut");
+    }
+
+    public void SlideIn()
+    {
+        questionsPanelAnim.Play("SlideIn");
     }
 
 
@@ -269,5 +274,12 @@ public class GameManager : MonoBehaviour
             LevelGratificiation(int.Parse(answer));
             answer = "";
         }
+    }
+
+    public void OpenPausePanel()
+    {
+        isTouchEnabled=false;
+        SlideOut();
+        pausePanel.SetActive(true);
     }
 }

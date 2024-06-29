@@ -58,4 +58,17 @@ public class AudioManager : MonoBehaviour
     {
         nonLoopedAudioSource.PlayOneShot(audioLibrary.GetAudioClipByKey(key));
     }
+
+    public void MuteAllAudio()
+    {
+        musicAudioSource.volume = 0;
+        nonLoopedAudioSource.volume = 0;
+
+    }
+
+    public void UnmuteAllAudio()
+    {
+        SetBGMusic();
+        nonLoopedAudioSource.volume = 1;
+    }
 }

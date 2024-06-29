@@ -7,8 +7,12 @@ public class AnimationEvents : MonoBehaviour
     [SerializeField] private GameManager gameManager;
     public void GenerateNextQuestion()
     {
-        gameManager.questionsPanelAnim.gameObject.SetActive(false);
-        gameManager.GenerateQuestions();
+        if (!gameManager.pausePanel.activeInHierarchy)
+        {
+            gameManager.questionsPanelAnim.gameObject.SetActive(false);
+            gameManager.GenerateQuestions();
+        }
+
     }
 
     public void EnableTouchStatus()
